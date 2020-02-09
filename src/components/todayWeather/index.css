@@ -1,0 +1,45 @@
+.card__upper--weather .summary {
+  height: 160px;
+}
+.card__upper--weather .summary__temperature {
+  font-size: 90px;
+  padding-top: 30px;
+  text-align: center;
+  line-height: 100%;
+}
+.card__upper--weather .summary__temperature--data {
+  display: inline-block;
+}
+.card__upper--weather .summary__temperature--unit {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  border: white solid 5px;
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  left: 5px;
+}
+.card__upper--weather .summary__condition {
+  text-align: center;
+  font-size: 20px;
+}
+.card__upper--weather .detail {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  display: flex;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.card__upper--weather .detail__humidity {
+  border-right: rgba(128, 128, 128, 0.71) solid 1px;
+}
+.card__upper--weather .detail__humidity, .card__upper--weather .detail__wind {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=index.css.map */

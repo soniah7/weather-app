@@ -1,0 +1,46 @@
+.card__upper {
+  color: white;
+  height: 260px;
+  border-radius: 50px 50px 0px 0px; //注意overflow和border-radius要同时出现！！！！所以如果不想在content设置overflow就一定要在这里设置border-radius！！！
+  border-bottom: rgba(128, 128, 128, 0.23) solid 1px;
+  background-image: url("https://www.nyh.ee/wp-content/uploads/2019/10/paris.jpg");
+  background-size: cover;
+  overflow:hidden;
+  display: flex;
+  justify-content: space-between;
+  &--location { ///这里的--location/weather/twitter/weeklyWeather的css，放在各自component文件夹的scss里面还是就在home/index.scss这里？？？？
+    font-family: Acme;
+    flex: 2;
+    //padding: 20px 0px 0px 100px; ///如果里面不加一个div而是直接设置文字在这个标签里的padding，会挤占左边temperature的空间，为什么？？？？？
+    font-size: 35px;
+    letter-spacing: 4px;
+  }
+  &--weather {
+    font-family: Laila;
+    flex: 1;
+    padding: 10px 20px 10px 10px;
+  }
+}
+
+
+
+.card__lower {
+  font-family: 'Open Sans';
+  height: 300px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  &--twitter {
+    margin-right: 10px;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  &--weeklyWeather {
+    flex: 2;
+  }
+}
+
+
+

@@ -1,0 +1,16 @@
+.container {
+  margin: 10px auto;
+  max-width: 1032px;
+}
+
+.content {///这个content放在哪里声明？？？？home/index.css or 这里？？？？
+  //padding-top: 5px; //注意这里的border radius是包括了padding的box！！！！！！！！！！！
+  //overflow: hidden; ///为什么这里设置了hidden然后其子元素content的位置会变？？？？？？？？？？？？？？
+  margin-top: 20px;
+  height: 600px;
+  border-radius: 50px;
+  box-shadow: 20px 15px 20px 1px rgba(0, 0, 0, 0.1);
+  //overflow: hidden;///设置了以后twitter第二条内容拓展后的最下方会被隐藏！！！
+  background-color: white;
+
+}

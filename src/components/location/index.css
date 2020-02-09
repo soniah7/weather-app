@@ -1,0 +1,20 @@
+.card__upper--location {
+  text-align: right;
+}
+.card__upper--location div {
+  display: inline-block;
+  text-align: right;
+  margin: 40px 100px 0px 0px;
+  position: relative;
+}
+.card__upper--location div:after {
+  background-color: white;
+  content: "";
+  width: 100%;
+  height: 4px;
+  top: calc(100% + 7px);
+  left: 0%;
+  position: absolute;
+}
+
+/*# sourceMappingURL=index.css.map */

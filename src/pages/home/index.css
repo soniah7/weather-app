@@ -1,0 +1,42 @@
+.card__upper {
+  color: white;
+  height: 260px;
+  border-radius: 50px 50px 0px 0px;
+  border-bottom: rgba(128, 128, 128, 0.23) solid 1px;
+  background-image: url("https://www.nyh.ee/wp-content/uploads/2019/10/paris.jpg");
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.card__upper--location {
+  font-family: Acme;
+  flex: 2;
+  font-size: 35px;
+  letter-spacing: 4px;
+}
+.card__upper--weather {
+  font-family: Laila;
+  flex: 1;
+  padding: 10px 20px 10px 10px;
+}
+
+.card__lower {
+  font-family: "Open Sans";
+  height: 300px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.card__lower--twitter {
+  margin-right: 10px;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card__lower--weeklyWeather {
+  flex: 2;
+}
+
+/*# sourceMappingURL=index.css.map */

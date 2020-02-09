@@ -1,0 +1,31 @@
+.card__lower--weeklyWeather ul {
+  padding: 10px 10px 10px 20px;
+  border-left: rgba(105, 105, 105, 0.31) solid 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.card__lower--weeklyWeather ul li {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__lower--weeklyWeather ul li .weekday {
+  font-family: Laila;
+  font-weight: bold;
+  font-size: 17px;
+}
+.card__lower--weeklyWeather ul li .icon {
+  height: 170px;
+  width: 80px;
+  color: rgba(111, 199, 235, 0.75);
+}
+.card__lower--weeklyWeather ul li .unit {
+  margin-bottom: 5px;
+}
+.card__lower--weeklyWeather ul li .condition {
+  font-family: Montserrat;
+}
+
+/*# sourceMappingURL=index.css.map */

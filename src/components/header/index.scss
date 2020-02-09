@@ -1,0 +1,209 @@
+.head {
+  //width: 100%; /// 为什么加上了反而会让width超过当前页面最大值一点？？？？？？
+  padding: 10px; //是否这里最好不要是margin？
+  //position: fixed;
+  position: sticky; ///这样就不用让其他的pages里面的元素加margin top了。
+  top: 0px;/// 没有它sticky不起作用！一定要设置一个top？ ///这里不应该是top:100px！
+  transition: all 0.2s ease-in-out;
+  z-index: 4;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1032px;
+    margin: 25px auto;
+  }
+
+  &__logo {
+    color: #49515d;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    line-height: 1;
+
+    &--blue {
+      color: rgb(63, 140, 187);
+    }
+  }
+
+  &__menu{
+    //font-family: 'Montserrat', Helvetica, sans-serif; //因为没有head__menu这个css class，所以这样写没有意义！！在sass里面要注意！！
+
+    &--horizontal {
+      list-style: none;
+      margin: 0;
+      li {
+        display: inline;
+        padding: 8px 0;
+        margin: 0 20px;
+        position: relative;
+        a {
+          text-decoration: none;
+          color: grey;
+          &:hover, &:active {
+            color: black;
+            &:after {
+              content: "";
+              width: 25px;
+            }
+          }
+          &.stay-hover {
+            color: black;
+            &:after { //试试这里不加&会怎么样？
+              content: "";
+              width: 25px;
+              //color: black;
+            }
+          }
+          &:after {
+            content: "";
+            width: 0px;
+            display: block;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            margin: 0 auto;
+            background-color: #6cb9ff;
+            transition: all 0.15s ease-in-out;
+          }
+        }
+
+      }
+
+    }
+    &-icon {
+      display:none;
+      cursor:pointer;
+    }
+
+    &--vertical {
+      width: 0%;//////
+      //height: 0%;//// 如果不加这个，打开手机菜单后切换成网页屏幕显示，菜单仍然在，内容却没了。为什么？？？？//但好像加了以后也还不够，一定要在media query里面加？？？
+
+      background-color:#1c63a9;
+      min-height: 100%; //一定要min-height，为什么？？ http://jsfiddle.net/zitrusfrisch/Sa6cb/3/
+      height:auto;
+      max-width:320px;
+
+      //width:320px; //一开始最好不要设置为320而是0？？？？为什么？？？
+      position: fixed; //一定要是fixed，如果是absolute往上滑会有box shadow覆盖的问题！！！//1 如果没有设置position为absolute，height:100%也显示成0，为什么？？？？ 2 为什么页面显示的body不包括整个页面，但这里height显示为100%却有覆盖整个页面的效果？？
+      top: 44px;
+      //right: -320px;//float:right;//margin-left: auto;//text-align: right;;//为什么都没效果？？
+
+      z-index:5;
+      transition: width 0.44s ease-in-out;
+
+      transform:translateX(-100%); //这里translateX为什么div下的文字顺序并没有镜面反转？？是不是css设计好不翻转子类？？？？？？
+      left: 100%;//一定中间要有空格！！！//left: calc(100% - 320px);
+
+      box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+
+    }
+  }
+
+
+}
+@media only screen and (min-width: 991px) {
+  .head.sticky { //这里顺序很重要，不能是.sticky.head???
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    .head__content {
+      margin: auto;
+      height: 100%;
+    }
+  }
+  .head__menu--vertical {
+    width: 0% !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .head {
+    position: sticky;
+    //top: 100px;/// 这里不是100px！
+    left: 0;
+    right: 0;
+    //width: 100%; /// 为什么加上了反而会让width超过当前页面最大值一点？？？？？？
+    max-width: 100%;
+    margin: 0;
+    //height: 50px;
+    background-color: #1c63a9;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    &__content{
+      margin: 0px;//margin: 15px 5px;
+    }
+    &__logo, &__logo--green  {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Montserrat', Helvetica, sans-serif;
+      margin: 0;
+    }
+    &__menu--horizontal {
+      display: none;
+
+    }
+    &__menu-icon {
+      display: block;
+      color: white;
+
+    }
+    &__menu--vertical *{
+      list-style: none;
+      color: white;
+      li {
+        padding: 8px 0;
+        margin: 0 20px;
+        position: relative;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: white;
+          opacity: 90%;
+          margin: auto;
+          &:hover, &:active {
+            color: white;
+            opacity: 100%;
+            &:after {
+              content: "";
+              width: 25px;
+            }
+          }
+          &.stay-hover {
+            color: white;
+            &:after { //试试这里不加&会怎么样？
+              content: "";
+              width: 25px;
+              //color: black;
+            }
+            opacity: 100%;
+          }
+          &:after {
+            content: "";
+            width: 0px;
+            display: block;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            margin: 0 auto;
+            background-color: white;
+            transition: all 0.15s ease-in-out;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  .card__container {
+    top: 50px;
+  }
+}
