@@ -12,13 +12,7 @@ export default class WeeklyWeather extends Component {
             weeklyData:[]
         }
     }
-    // componentWillMount() {
-    //     this.setState({weeklyData: [{day: 'Monday', degree: 9, condition: 'raining'},
-    //             {day: 'Tuesday', degree: 10, condition: 'sunny'},
-    //             {day: 'Wednesday', degree: 11, condition: 'cloudy'},
-    //             {day: 'Thursday', degree: 12, condition: 'sunny to cloudy'},
-    //             {day: 'Friday', degree: 13, condition: 'windy'}]})
-    // }
+
     async componentDidMount() {
         const location = this.props.location;
         const response = await axios.get('http://api.openweathermap.org/data/2.5/forecast',{params: {id: '2147714', appid: '89048c50960e64dc0c0190da242638db'}});
@@ -46,7 +40,7 @@ export default class WeeklyWeather extends Component {
                 return faCloud;
             case 'Snow':
                 return faSnowflake;
-            case 'Wind'://?
+            case 'Wind':
                 return faWind;
         }
     }

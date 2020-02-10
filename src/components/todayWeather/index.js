@@ -6,30 +6,22 @@ export default class TodayWeather extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            degree: '',//为什么这里所有state删除了就报错cannot read degree of null，但是留一个都不会报错？？？？？
+            degree: '',
             condition: '',
             humidity: '',
             windSpeed: ''
         }
     }
 
-    async componentDidMount() {//componentDidMount可以用async吗？？
+    async componentDidMount() {
         const location = this.props.location;
         const response = await axios.get('http://api.openweathermap.org/data/2.5/weather',{params: {id: '2147714', appid: '89048c50960e64dc0c0190da242638db'}});
         const data = {degree: parseFloat((response.data.main.temp-273.15).toFixed(1)),
             condition: response.data.weather[0].main,
             humidity:response.data.main.humidity,
             windSpeed: response.data.wind.speed};
-        this.setState(data);//不是this.setState({data}!!!!
-
+        this.setState(data);
     }
-    //
-    // async requestWeatherData (location) {
-    //     const response = await axios.get('http://api.openweathermap.org/data/2.5/weather',{params: {id: '2147714', appid: '89048c50960e64dc0c0190da242638db'}});
-    //     const weeklyData = {degree: response.data.main.temp}
-    //     console.log(response);
-    //     return weeklyData;
-    // }
 
     render() {
         return (
