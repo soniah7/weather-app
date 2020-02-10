@@ -11,15 +11,14 @@ class Home extends Component {
         super();
         this.state = {
             location: {
-                country: 'unknown',
-                city: 'unknown'
+                country: '',
+                city: ''
             }
         }
     }
 
     getLocation = (location) => {
-        this.setState({location});
-        // return location; //这样不行！！！！传递的是函数而不是call它？？？？？！！！！！！！
+        this.setState({location:location});
     }
 
     render() {

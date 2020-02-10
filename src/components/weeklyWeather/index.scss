@@ -1,30 +1,35 @@
 .card__lower--weeklyWeather {
   ul {
-    padding: 10px 10px 10px 20px;///这个padding不能在weeklyWeather元素下面加，为什么？？？
+    padding: 10px 10px 10px 20px;
     border-left: rgba(105, 105, 105, 0.31) solid 1px;
     display: flex;
     justify-content: space-between;
+
     li {
-      width: 100%; ///这样保证每天的width不会因为底下文字的增多而变得比剩下四天的长！！！
-      text-align: center;//为什么这里设置li的text-align是center，其子元素.condition好像继承了这个property一样？？？？？？？？
+      width: 100%;
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-       .weekday {
+
+      .weekday {
         font-family: Laila;
         font-weight: bold;
         font-size: 17px;
       }
+
       .icon {
         height: 170px;
         width: 80px;
-        color:rgba(111,199,235,0.75);
+        color: rgba(119, 188, 235, 0.75);
       }
+
       .unit {
-        margin-bottom:5px;
+        margin-bottom: 5px;
       }
+
       .condition {
-        font-family:Montserrat;
+        font-family: Montserrat;
       }
     }
   }

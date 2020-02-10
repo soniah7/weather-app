@@ -70,7 +70,7 @@
 }
 .head__menu--vertical {
   width: 0%;
-  background-color: #1c63a9;
+  background-color: #6587b4;
   min-height: 100%;
   height: auto;
   max-width: 320px;
@@ -106,7 +106,7 @@
     right: 0;
     max-width: 100%;
     margin: 0;
-    background-color: #1c63a9;
+    background-color: #6587b4;
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   }
   .head__content {
@@ -118,6 +118,9 @@
     font-weight: 400;
     font-family: "Montserrat", Helvetica, sans-serif;
     margin: 0;
+  }
+  .head__logo--blue, .head__logo--green--blue {
+    color: #4ca7de;
   }
   .head__menu--horizontal {
     display: none;
