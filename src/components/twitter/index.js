@@ -151,7 +151,8 @@ export default class Twitter extends Component {
 
                 <div className="next-button"
                     onClick={this.nextPageAnimation}>
-                    <div>Next <FontAwesomeIcon icon={faCaretRight}/></div>
+                    <d
+                        iv>Next <FontAwesomeIcon icon={faCaretRight}/></div>
                 </div>
 
             </div>
