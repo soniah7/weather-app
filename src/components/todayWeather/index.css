@@ -18,7 +18,7 @@
   display: inline-block;
   position: relative;
   bottom: 50px;
-  left: 5px;
+  left: 15px;
 }
 .card__upper--weather .summary__condition {
   text-align: center;
@@ -32,7 +32,7 @@
   font-size: 14px;
 }
 .card__upper--weather .detail__humidity {
-  border-right: rgba(128, 128, 128, 0.71) solid 1px;
+  border-right: #adadad solid 1px;
 }
 .card__upper--weather .detail__humidity, .card__upper--weather .detail__wind {
   display: flex;

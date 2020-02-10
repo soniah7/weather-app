@@ -34,8 +34,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
@@ -78,6 +81,8 @@
       <workItem from="1580902711004" duration="49000" />
       <workItem from="1580902869945" duration="10584000" />
       <workItem from="1581055609813" duration="26740000" />
+      <workItem from="1581212198495" duration="5574000" />
+      <workItem from="1581298056689" duration="12395000" />
     </task>
     <servers />
   </component>
@@ -88,6 +93,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="220" y="36" key="#ESLint" timestamp="1581297143563">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="220" y="36" key="#ESLint/0.0.1440.900@0.0.1440.900" timestamp="1581297143563" />
     <state x="293" y="176" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1580455888281">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -100,29 +109,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="155" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1580894041363" />
-    <state width="1414" height="232" key="GridCell.Tab.0.bottom" timestamp="1580458508857">
+    <state width="1414" height="230" key="GridCell.Tab.0.bottom" timestamp="1581296911837">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1414" height="232" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580458508857" />
-    <state width="1414" height="232" key="GridCell.Tab.0.center" timestamp="1580458508850">
+    <state width="1414" height="230" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581296911837" />
+    <state width="1414" height="230" key="GridCell.Tab.0.center" timestamp="1581296911835">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1414" height="232" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580458508850" />
-    <state width="1414" height="232" key="GridCell.Tab.0.left" timestamp="1580458508848">
+    <state width="1414" height="230" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581296911835" />
+    <state width="1414" height="230" key="GridCell.Tab.0.left" timestamp="1581296911834">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1414" height="232" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580458508848" />
-    <state width="1414" height="232" key="GridCell.Tab.0.right" timestamp="1580458508853">
+    <state width="1414" height="230" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581296911834" />
+    <state width="1414" height="230" key="GridCell.Tab.0.right" timestamp="1581296911836">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1414" height="232" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580458508853" />
+    <state width="1414" height="230" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581296911836" />
     <state x="113" y="1" key="SettingsEditor" timestamp="1581062864120">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="113" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1581062864120" />
-    <state x="301" y="0" width="838" height="900" key="search.everywhere.popup" timestamp="1581207680292">
+    <state x="301" y="0" width="838" height="900" key="search.everywhere.popup" timestamp="1581315052966">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="301" y="0" width="838" height="900" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1581207680292" />
+    <state x="301" y="0" width="838" height="900" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1581315052966" />
   </component>
 </project>

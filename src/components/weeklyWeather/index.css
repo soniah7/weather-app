@@ -19,7 +19,7 @@
 .card__lower--weeklyWeather ul li .icon {
   height: 170px;
   width: 80px;
-  color: rgba(111, 199, 235, 0.75);
+  color: rgba(119, 188, 235, 0.75);
 }
 .card__lower--weeklyWeather ul li .unit {
   margin-bottom: 5px;

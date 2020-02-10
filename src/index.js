@@ -6,5 +6,5 @@ import './index.scss';
 import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render((
-        <App />
+    <App/>
 ), document.getElementById('root'));
