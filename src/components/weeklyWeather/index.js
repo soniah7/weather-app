@@ -50,7 +50,7 @@ export default class WeeklyWeather extends Component {
             <ul>
                 {this.state.weeklyData.map((dailyData) => {
                     return (
-                        <li>
+                        <li key={dailyData.day}>
                             <div className="weekday">{dailyData.day}</div>
                             <FontAwesomeIcon className="icon" icon={this.generateWeatherIcon(dailyData.condition)}/>
                             <div className="unit">{dailyData.degree} °</div>

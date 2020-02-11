@@ -22,7 +22,8 @@
   background-color: rgba(121, 181, 251, 0.16);
   background-size: cover;
   display: inline-block;
-  flex: 1;
+  flex: 1 1;
+  background-position: center;
 }
 .card__lower--twitter .twitter__content--tweet {
   box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.1);
@@ -34,7 +35,7 @@
   background-color: white;
   padding: 5px;
   position: relative;
-  flex: 5;
+  flex: 5 1;
 }
 .card__lower--twitter .twitter__content--tweet .see-more {
   font-size: 11.5px;
@@ -45,13 +46,19 @@
   cursor: pointer;
   position: absolute;
   top: 150px;
+  width: 80px;
   left: calc(100% - 100px);
 }
 .card__lower--twitter .twitter__content--tweet .see-more:hover:not(span) {
   text-decoration: underline;
 }
+.card__lower--twitter .twitter__content ul {
+  padding: 0px;
+  margin: 0px;
+}
 .card__lower--twitter .twitter__content ul li {
   position: absolute;
+  width: 100%;
   display: flex;
 }
 .card__lower--twitter .twitter__content ul li:first-child {
@@ -95,6 +102,18 @@
 }
 .angle-button:hover {
   background-color: rgba(128, 128, 128, 0.18);
+}
+
+@media only screen and (max-width: 414px) {
+  .card__lower--twitter {
+    padding: 20px 10px;
+  }
+  .card__lower--twitter li {
+    margin-top: 10px;
+  }
+  .card__lower--twitter .next-button {
+    margin: 250px 0px 0px 10px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

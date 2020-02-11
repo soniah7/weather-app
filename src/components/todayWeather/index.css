@@ -42,4 +42,17 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 414px) {
+  .card__upper--weather .summary__temperature--data {
+    font-size: 70px;
+  }
+  .card__upper--weather .summary__temperature--unit {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    border: white solid 3px;
+    left: 8px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

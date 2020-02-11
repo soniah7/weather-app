@@ -17,6 +17,9 @@ function App() {
                     <Route path='/setting' component={Setting}></Route>
                 </div>
             </Switch>
+            <div className="footer">© 2020 All rights reserved. Made by&nbsp;
+                <a href="https://github.com/soniah7">Meiyazi</a> in 2020 Feb.
+            </div>
         </Router>
     );
 }

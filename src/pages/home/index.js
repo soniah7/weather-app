@@ -23,7 +23,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="content">
+            <div className="card">
                 <div className="card__upper">
                     <div className="card__upper--weather">
                         <TodayWeather location={this.state.location}/>

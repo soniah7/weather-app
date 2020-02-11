@@ -23,9 +23,29 @@
 }
 .card__lower--weeklyWeather ul li .unit {
   margin-bottom: 5px;
+  padding-left: 5px;
 }
 .card__lower--weeklyWeather ul li .condition {
   font-family: Montserrat;
+}
+
+@media only screen and (max-width: 414px) {
+  .card__lower--weeklyWeather ul {
+    border-left: none;
+    border-bottom: rgba(105, 105, 105, 0.31) solid 1px;
+    margin: 0px 10px;
+    padding: 20px 0px;
+  }
+  .card__lower--weeklyWeather ul li {
+    font-size: 14px;
+  }
+  .card__lower--weeklyWeather ul li .icon {
+    height: 90px;
+    width: 45px;
+  }
+  .card__lower--weeklyWeather ul li .weekday {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

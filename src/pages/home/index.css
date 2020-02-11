@@ -40,4 +40,30 @@
   flex: 2;
 }
 
+@media only screen and (max-width: 414px) {
+  .card__upper {
+    height: 320px;
+    flex-direction: column;
+    border-radius: 35px 35px 0px 0px;
+  }
+  .card__upper--location {
+    flex: 1;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .card__upper--weather {
+    padding: 10px 20px 10px 10px;
+  }
+
+  .card__lower {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 580px;
+    justify-content: flex-end;
+  }
+  .card__lower--weeklyWeather {
+    flex: 0;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

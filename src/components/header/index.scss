@@ -211,8 +211,11 @@
 
     }
   }
+}
 
-  .card__container {
-    top: 50px;
+
+@media only screen and (max-width: 640px) {
+  .head__menu--vertical {
+    max-width: 200px;
   }
 }

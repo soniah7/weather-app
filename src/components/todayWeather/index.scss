@@ -49,3 +49,27 @@
   }
 
 }
+
+
+@media only screen and (max-width: 414px) {
+  .card__upper--weather {
+
+    .summary {
+      &__temperature {
+        //font-size: 70px;//为什么不能在这里改？？？？？一定要改&--data才行？？？
+        &--data {
+          font-size: 70px;
+        }
+        &--unit {
+          width: 5px;
+          height: 5px;
+          border-radius: 5px;
+          border: white solid 3px;
+          left: 8px;
+
+        }
+      }
+
+    }
+  }
+}

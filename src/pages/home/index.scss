@@ -43,4 +43,31 @@
 }
 
 
+@media only screen and (max-width: 414px) {
+  .card__upper {
+    height: 320px;//一定要改，不然location怎么都显示不了！！
+    flex-direction: column;
+    border-radius: 35px 35px 0px 0px;
+
+    &--location {
+      flex: 1;
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+    &--weather {
+      padding: 10px 20px 10px 10px;
+    }
+  }
+
+  .card__lower {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 580px;///要么设置height，要么设置下面的flex-end，这样天气模块才不会往上跑，为什么？？？？
+    justify-content: flex-end;///？？？
+    &--weeklyWeather {
+      flex: 0;
+    }
+  }
+
+}
 
