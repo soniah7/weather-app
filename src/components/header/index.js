@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import './index.scss';
 
 class Header extends Component {
+
     render() {
         return (
             <header className="head">

@@ -41,16 +41,7 @@
           text-decoration: none;
           color: grey;
 
-          &:hover, &:active {
-            color: black;
-
-            &:after {
-              content: "";
-              width: 25px;
-            }
-          }
-
-          &.stay-hover {
+          &:hover, &:active, &.stay-hover {
             color: black;
 
             &:after {

@@ -37,17 +37,10 @@
   text-decoration: none;
   color: grey;
 }
-.head__menu--horizontal li a:hover, .head__menu--horizontal li a:active {
+.head__menu--horizontal li a:hover, .head__menu--horizontal li a:active, .head__menu--horizontal li a.stay-hover {
   color: black;
 }
-.head__menu--horizontal li a:hover:after, .head__menu--horizontal li a:active:after {
-  content: "";
-  width: 25px;
-}
-.head__menu--horizontal li a.stay-hover {
-  color: black;
-}
-.head__menu--horizontal li a.stay-hover:after {
+.head__menu--horizontal li a:hover:after, .head__menu--horizontal li a:active:after, .head__menu--horizontal li a.stay-hover:after {
   content: "";
   width: 25px;
 }

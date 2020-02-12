@@ -3,33 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="55e5dd78-75cf-4bf8-aa74-0446376571d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/location/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/location/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/location/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/location/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/location/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/location/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/location/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/location/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todayWeather/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todayWeather/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todayWeather/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todayWeather/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todayWeather/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todayWeather/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/twitter/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/twitter/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/twitter/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/twitter/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/twitter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/twitter/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/twitter/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/twitter/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/weeklyWeather/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/weeklyWeather/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/weeklyWeather/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/weeklyWeather/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todayWeather/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todayWeather/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/weeklyWeather/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/weeklyWeather/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/weeklyWeather/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/weeklyWeather/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,14 +145,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1414" height="230" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581296911836" />
-    <state x="113" y="1" key="SettingsEditor" timestamp="1581062864120">
+    <state x="113" y="1" key="SettingsEditor" timestamp="1581426093303">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="113" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1581062864120" />
-    <state x="567" y="152" width="784" height="546" key="find.popup" timestamp="1581419086483">
+    <state x="113" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1581426093303" />
+    <state x="567" y="152" width="784" height="546" key="find.popup" timestamp="1581433989919">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="567" y="152" width="784" height="546" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1581419086483" />
+    <state x="567" y="152" width="784" height="546" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1581433989919" />
     <state x="301" y="0" width="838" height="900" key="search.everywhere.popup" timestamp="1581315052966">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

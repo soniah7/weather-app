@@ -1,7 +1,7 @@
 .card__upper--location {
   text-align: right;
 
-  div {
+  .display {
     display: inline-block;
     text-align: right;
     margin: 40px 100px 0px 0px;
@@ -12,10 +12,41 @@
       content: "";
       width: 100%;
       height: 4px;
-      top: calc(100% + 7px);
+      top: calc(100% + 5px);
       left: 0%;
       position: absolute;
     }
+
+  }
+
+
+  .input{
+    display: inline-block;
+    //text-align: right; //为什么这里可以删去而不影响布局？？？？
+    margin: 40px 100px 0px 0px;
+    position: relative;
+    &:after {
+      background-color: white;
+      content: "";
+      width: 100%;
+      height: 4px;
+      top: calc(100% + 5px);
+      left: 0%;
+      position: absolute;
+    }
+
+  }
+  input {
+    text-align: right; //这让input从右往左输入！！！cool！！
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    font-family: Acme;
+    height: 33px;
+  }
+  :focus{
+    outline: none;
   }
 }
 
