@@ -48,6 +48,7 @@
   top: 150px;
   width: 80px;
   left: calc(100% - 100px);
+  text-decoration: none;
 }
 .card__lower--twitter .twitter__content--tweet .see-more:hover:not(span) {
   text-decoration: underline;

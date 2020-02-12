@@ -1,8 +1,8 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCloud, faCloudRain, faSnowflake, faSun, faWind} from "@fortawesome/free-solid-svg-icons";
-import React, {Component} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faCloud, faCloudRain, faSnowflake, faSun, faWind, faCloudSun} from "@fortawesome/free-solid-svg-icons"
+import React, {Component} from "react"
 import './index.scss'
-import axios from "axios";
+import axios from "axios"
 
 export default class WeeklyWeather extends Component {
 
@@ -16,16 +16,18 @@ export default class WeeklyWeather extends Component {
     async componentDidUpdate(prevProps, prevState) {
 
     //为什么这里一次数据的更新会触发两个update？一次给state的变化，一次给props的变化？？？？！！！！！
-        if (prevProps.location != this.props.location) {
+        if (prevProps.location !== this.props.location) { //为什么expected saw !== ？？？ 这里是!=会有什么区别 ？？？
             const location = this.props.location;
             const response = await axios.get('http://api.openweathermap.org/data/2.5/forecast',{params: {q: location.city, appid: '89048c50960e64dc0c0190da242638db'}});
-            let weekDays=['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'];
-            const weeklyData = response.data.list.filter((element, index)=> {
-                if([0, 8, 16, 24, 32].includes(index)) {
+            let weekDays=['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];//这里不是周一，而是周日开始！！！
+            const weeklyData = response.data.list.filter(
+                (element, index)=> {
+                if([7, 15, 23, 31, 39].includes(index)) {
                     return true;
                 }
+                return false;
             }).map((element, index)=>{
-                return {day: weekDays[new Date(element.dt_txt).getDay()-1],//一定要-1
+                return {day: weekDays[new Date(element.dt_txt).getDay()],//一定要-1
                     degree: parseFloat((element.main.temp-273.15).toFixed(1)),
                     condition: element.weather[0].main}
             });
@@ -45,6 +47,8 @@ export default class WeeklyWeather extends Component {
                 return faSnowflake;
             case 'Wind':
                 return faWind;
+            default:
+                return faCloudSun;
         }
     }
 

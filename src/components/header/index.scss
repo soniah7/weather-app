@@ -36,20 +36,19 @@
         padding: 8px 0;
         margin: 0 20px;
         position: relative;
-
-        a {
+        a {//Link元素是a的一种？？？？？
           text-decoration: none;
+        }
+        span {
           color: grey;
 
           &:hover, &:active, &.stay-hover {
             color: black;
-
             &:after {
               content: "";
               width: 25px;
             }
           }
-
           &:after {
             content: "";
             width: 0px;
@@ -155,9 +154,11 @@
         margin: 0 20px;
         position: relative;
         text-align: center;
-
-        a {
+        a {//Link元素是a的一种？？？？？
           text-decoration: none;
+        }
+
+        span {
           color: white;
           opacity: 90%;
           margin: auto;

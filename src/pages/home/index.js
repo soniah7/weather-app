@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import './index.scss'
-import Twitter from "../../components/twitter";
-import WeeklyWeather from "../../components/weeklyWeather";
-import TodayWeather from "../../components/todayWeather";
-import Location from "../../components/location";
+import Twitter from "../../components/twitter"
+import WeeklyWeather from "../../components/weeklyWeather"
+import TodayWeather from "../../components/todayWeather"
+import Location from "../../components/location"
 
 class Home extends Component {
 
@@ -23,6 +23,7 @@ class Home extends Component {
 
     render() {
         return (
+            <div className="container">
             <div className="card">
                 <div className="card__upper">
                     <div className="card__upper--weather">
@@ -40,6 +41,7 @@ class Home extends Component {
                         <WeeklyWeather location={this.state.location}/>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }

@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import './index.scss'
 
 class Setting extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 Setting Page
             </div>
-        );
+        )
     }
 }
 
-export default Setting;
+export default Setting
