@@ -1,4 +1,4 @@
-.card__upper--weather {
+.card__upper--todayWeather {
   .summary {
     height: 160px;
     &__temperature {
@@ -9,7 +9,6 @@
       &--data {
         display: inline-block;
       }
-
       &--unit {
         width: 10px;
         height: 10px;
@@ -53,7 +52,6 @@
 
 @media only screen and (max-width: 414px) {
   .card__upper--weather {
-
     .summary {
       &__temperature {
         &--data {
@@ -65,10 +63,8 @@
           border-radius: 5px;
           border: white solid 3px;
           left: 8px;
-
         }
       }
-
     }
   }
 }

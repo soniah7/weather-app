@@ -1,17 +1,16 @@
 import React, {Component} from 'react'
-import './index.scss'
 import Twitter from "../../components/twitter"
 import WeeklyWeather from "../../components/weeklyWeather"
 import TodayWeather from "../../components/todayWeather"
 import Location from "../../components/location"
+import './index.scss'
 
-class Home extends Component {
+export default class Home extends Component {
 
     constructor() {
         super();
         this.state = {
             location: {
-                country: '',
                 city: ''
             }
         }
@@ -22,11 +21,12 @@ class Home extends Component {
     }
 
     render() {
+
         return (
             <div className="container">
             <div className="card">
                 <div className="card__upper">
-                    <div className="card__upper--weather">
+                    <div className="card__upper--todayWeather">
                         <TodayWeather location={this.state.location}/>
                     </div>
                     <div className="card__upper--location">
@@ -47,4 +47,3 @@ class Home extends Component {
     }
 }
 
-export default Home;

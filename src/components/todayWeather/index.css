@@ -1,16 +1,16 @@
-.card__upper--weather .summary {
+.card__upper--todayWeather .summary {
   height: 160px;
 }
-.card__upper--weather .summary__temperature {
+.card__upper--todayWeather .summary__temperature {
   font-size: 90px;
   padding-top: 30px;
   text-align: center;
   line-height: 100%;
 }
-.card__upper--weather .summary__temperature--data {
+.card__upper--todayWeather .summary__temperature--data {
   display: inline-block;
 }
-.card__upper--weather .summary__temperature--unit {
+.card__upper--todayWeather .summary__temperature--unit {
   width: 10px;
   height: 10px;
   border-radius: 15px;
@@ -20,21 +20,21 @@
   bottom: 50px;
   left: 15px;
 }
-.card__upper--weather .summary__condition {
+.card__upper--todayWeather .summary__condition {
   text-align: center;
   font-size: 20px;
 }
-.card__upper--weather .detail {
+.card__upper--todayWeather .detail {
   font-family: "Montserrat";
   font-weight: bolder;
   display: flex;
   margin-top: 10px;
   font-size: 14px;
 }
-.card__upper--weather .detail__humidity {
+.card__upper--todayWeather .detail__humidity {
   border-right: #adadad solid 1px;
 }
-.card__upper--weather .detail__humidity, .card__upper--weather .detail__wind {
+.card__upper--todayWeather .detail__humidity, .card__upper--todayWeather .detail__wind {
   display: flex;
   flex: 1;
   flex-direction: column;

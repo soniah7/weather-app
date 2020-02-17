@@ -1,3 +1,17 @@
+.container {
+  margin: 10px auto;
+  max-width: 1032px;
+  z-index: 2;
+  position: relative;
+}
+
+.card {
+  margin-top: 15px;
+  height: 610px;
+  border-radius: 50px;
+  box-shadow: 20px 15px 20px 1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
 .card__upper {
   color: white;
   height: 280px;
@@ -15,12 +29,11 @@
   font-size: 35px;
   letter-spacing: 4px;
 }
-.card__upper--weather {
+.card__upper--todayWeather {
   font-family: Laila;
   flex: 1;
   padding: 10px 20px 10px 10px;
 }
-
 .card__lower {
   font-family: "Open Sans";
   height: 320px;
@@ -40,6 +53,16 @@
 }
 
 @media only screen and (max-width: 414px) {
+  .card {
+    margin-top: 5px;
+    border-radius: 35px;
+    height: 890px;
+  }
+
+  .container {
+    height: 950px;
+  }
+
   .card__upper {
     height: 320px;
     flex-direction: column;
@@ -50,7 +73,7 @@
     font-size: 15px;
     letter-spacing: 2px;
   }
-  .card__upper--weather {
+  .card__upper--todayWeather {
     padding: 10px 20px 10px 10px;
   }
 
@@ -62,6 +85,11 @@
   }
   .card__lower--weeklyWeather {
     flex: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .card {
+    margin: 30px 20px;
   }
 }
 

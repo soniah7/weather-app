@@ -1,8 +1,8 @@
+import React, {Component} from "react"
+import axios from "axios"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faCloud, faCloudRain, faSnowflake, faSun, faWind, faCloudSun} from "@fortawesome/free-solid-svg-icons"
-import React, {Component} from "react"
 import './index.scss'
-import axios from "axios"
 
 export default class WeeklyWeather extends Component {
 
@@ -14,11 +14,10 @@ export default class WeeklyWeather extends Component {
     }
 
     async componentDidUpdate(prevProps, prevState) {
-
-    //这里一次数据的更新会触发两个update？一次给state的变化，一次给props的变化？
         if (prevProps.location !== this.props.location) {
             const location = this.props.location;
-            const response = await axios.get('http://api.openweathermap.org/data/2.5/forecast',{params: {q: location.city, appid: '89048c50960e64dc0c0190da242638db'}});
+            const response = await axios.get('http://api.openweathermap.org/data/2.5/forecast',
+                {params: {q: location.city, appid: '89048c50960e64dc0c0190da242638db'}});
             let weekDays=['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
             const weeklyData = response.data.list.filter(
                 (element, index)=> {
@@ -27,7 +26,7 @@ export default class WeeklyWeather extends Component {
                 }
                 return false;
             }).map((element, index)=>{
-                return {day: weekDays[new Date(element.dt_txt).getDay()],//一定要-1
+                return {day: weekDays[new Date(element.dt_txt).getDay()],
                     degree: parseFloat((element.main.temp-273.15).toFixed(1)),
                     condition: element.weather[0].main}
             });

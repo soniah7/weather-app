@@ -15,7 +15,7 @@ export default class Twitter extends Component {
             secondAngleUp: false,
             firstSeeMore: false,
             secondSeeMore: false,
-            tweetsData:[
+            tweetsData: [
                 {
                     icon: "https://cdn.imgbin.com/21/5/0/imgbin-computer-icons-avatar-social-media-blog-font-awesome-avatar-JdPkyt0m7ykS2bDNq99AHNXKV.jpg",
                     content: "This is a relatively short text."
@@ -30,24 +30,21 @@ export default class Twitter extends Component {
         this.tweetRef2 = React.createRef();
     }
 
-    nextPageAnimation = () => {}
+    nextPageAnimation = () => {
+    }
 
     componentDidMount() {
-
-        setTimeout(()=> this.collapse(), 500);
-        // 和location/index.js里面一样，一定要settimeout？
-        // 如果只设置1毫秒，有时候加载不出来see more
-        }
+        setTimeout(() => this.collapse(), 500);
+    }
 
     collapse = () => {
-        // 需要避免代码重复
+        //
         const tweetRef1 = this.tweetRef1.current;
         const tweetRef2 = this.tweetRef2.current;
         if (tweetRef1.scrollHeight <= tweetRef1.offsetHeight + 4) this.setState({firstAngleDown: false});
         if (tweetRef2.scrollHeight <= tweetRef2.offsetHeight + 4) this.setState({secondAngleDown: false});
         if (tweetRef1.scrollHeight > 172) this.setState({firstSeeMore: true});
         if (tweetRef2.scrollHeight > 172) this.setState({secondSeeMore: true});
-
         // document.querySelectorAll(".twitter__content--tweet").forEach((element, index) => { });
     }
 
@@ -68,31 +65,40 @@ export default class Twitter extends Component {
                     <ul>
                         <li key="first-tweet">
                             <div className="twitter__content--icon"
-                                 style={{backgroundImage: `url(${this.state.tweetsData[0].icon})`}}></div>
+                                 style={{backgroundImage: `url(${this.state.tweetsData[0].icon})`}}>
+                            </div>
                             <div className="twitter__content--tweet"
-                                style={{height: this.state.firstAngleUp? '160px':'90px'}}
-                                 ref={this.tweetRef1}>{this.state.tweetsData[0].content}
-                                {this.state.firstSeeMore ? <a href="/" className="see-more">..See More</a> : ''}
-                                {this.state.firstAngleDown? <FontAwesomeIcon icon={faAngleDown}
-                                                 className="angle-button"
-                                                 onClick={() => {
-                                                     this.setState({
-                                                         firstTweetOverflow: "visible",
-                                                         firstAngleDown: false,
-                                                         firstAngleUp: true
-                                                     });
-                                                     // 相比直接操作dom，在元素上改style是不是更好？
-                                                     // document.querySelectorAll(".twitter__content--tweet")[0].style.height = '160px';
-                                                 }}/> : ''}
+                                 style={{height: this.state.firstAngleUp ? '160px' : '90px'}}
+                                 ref={this.tweetRef1}>
+
+                                {this.state.tweetsData[0].content}
+
+                                {this.state.firstSeeMore ?
+                                    <a href="/#" className="see-more">..See More</a>
+                                    : ''}
+
+                                {this.state.firstAngleDown ?
+                                    <FontAwesomeIcon icon={faAngleDown}
+                                                     className="angle-button"
+                                                     onClick={() => {
+                                                         this.setState({
+                                                             firstTweetOverflow: "visible",
+                                                             firstAngleDown: false,
+                                                             firstAngleUp: true
+                                                         });
+                                                         // document.querySelectorAll(".twitter__content--tweet")[0].style.height = '160px';
+                                                     }}/>
+                                    : ''}
+
                                 {this.state.firstAngleUp ? <FontAwesomeIcon icon={faAngleUp}
-                                                                                            className="angle-button"
-                                                                                            onClick={() => {
-                                                                                                this.setState({
-                                                                                                    firstTweetOverflow: "hidden",
-                                                                                                    firstAngleDown: true,
-                                                                                                    firstAngleUp: false
-                                                                                                });
-                                                                                            }}/> : ''}
+                                                                            className="angle-button"
+                                                                            onClick={() => {
+                                                                                this.setState({
+                                                                                    firstTweetOverflow: "hidden",
+                                                                                    firstAngleDown: true,
+                                                                                    firstAngleUp: false
+                                                                                });
+                                                                            }}/> : ''}'
 
                             </div>
                         </li>
@@ -100,25 +106,25 @@ export default class Twitter extends Component {
                             <div className="twitter__content--icon"
                                  style={{backgroundImage: `url(${this.state.tweetsData[1].icon})`}}></div>
                             <div className="twitter__content--tweet"
-                                 style={{height: this.state.secondAngleUp? '160px':'90px'}}
+                                 style={{height: this.state.secondAngleUp ? '160px' : '90px'}}
                                  ref={this.tweetRef2}>{this.state.tweetsData[1].content}
-                                {this.state.secondSeeMore ? <a href="/" className="see-more">..See More</a> : ''}
+                                {this.state.secondSeeMore ? <a href="/#" className="see-more">..See More</a> : ''}
                                 {this.state.secondAngleDown ? <FontAwesomeIcon icon={faAngleDown}
-                                                 className="angle-button"
-                                                 onClick={() => {
-                                                     this.setState({
-                                                         secondAngleDown: false,
-                                                         secondAngleUp: true
-                                                     });
-                                                 }}/> : ''}
-                                {this.state.secondAngleUp? <FontAwesomeIcon icon={faAngleUp}
-                                                 className="angle-button"
-                                                 onClick={() => {
-                                                     this.setState({
-                                                         secondAngleDown: true,
-                                                         secondAngleUp: false
-                                                     });
-                                                 }}/> : ''}
+                                                                               className="angle-button"
+                                                                               onClick={() => {
+                                                                                   this.setState({
+                                                                                       secondAngleDown: false,
+                                                                                       secondAngleUp: true
+                                                                                   });
+                                                                               }}/> : ''}
+                                {this.state.secondAngleUp ? <FontAwesomeIcon icon={faAngleUp}
+                                                                             className="angle-button"
+                                                                             onClick={() => {
+                                                                                 this.setState({
+                                                                                     secondAngleDown: true,
+                                                                                     secondAngleUp: false
+                                                                                 });
+                                                                             }}/> : ''}
                             </div>
 
                         </li>

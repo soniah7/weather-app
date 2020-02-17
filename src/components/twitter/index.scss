@@ -26,7 +26,7 @@
       background-size: cover;
       display: inline-block;
       flex: 1 1;
-      background-position: center;;//浏览器兼容？
+      background-position: center;;
     }
 
     &--tweet {
@@ -60,10 +60,10 @@
     }
 
     ul {
-      padding: 0px; margin: 0px;//浏览器兼容？
+      padding: 0px; margin: 0px;
       li {
         position: absolute;
-        width: 100%; //保证text只有短短一行不到的时候文字框不会缩小
+        width: 100%;
         &:first-child {
           z-index: 3;
         }
@@ -125,8 +125,7 @@
 @media only screen and (max-width: 414px) {
   .card__lower--twitter {
     padding: 20px 10px;
-    //ul {
-     //为什么这里的ul显示的是0x0
+    //这里的ul是0x0
     li {
       margin-top: 10px;
     }

@@ -1,24 +1,25 @@
 import React from 'react'
-import './App.scss'
+import {Switch, BrowserRouter, Route} from 'react-router-dom'
 import Header from './components/header'
 import Home from './pages/home'
-import Setting from './pages/setting'
 import Explore from './pages/explore'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Setting from './pages/setting'
+
+import './App.scss'
 
 function App() {
     return (
-        <Router>
+        <BrowserRouter>
             <Header/>
             <Switch>
-                    <Route exact path='/' component={Home}></Route>
-                    <Route path='/explore' component={Explore}></Route>
-                    <Route path='/setting' component={Setting}></Route>
+                <Route exact path='/' component={Home}></Route>
+                <Route path='/explore' component={Explore}></Route>
+                <Route path='/setting' component={Setting}></Route>
             </Switch>
             <div className="footer">© 2020 All rights reserved. Made by&nbsp;
-                <a href="https://github.com/soniah7">Meiyazi ♥</a> in 2020 Feb.
+                <a href="https://github.com/soniah7">美雅子 ♥</a> in 2020 Feb.
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 

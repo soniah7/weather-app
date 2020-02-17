@@ -3,11 +3,10 @@ body {
   line-height: 1.6em;
   font-size: 15px;
   font-family: 'Roboto', Helvetica, sans-serif;
-  //height: 100%; //这么设置的话页面就不能下拉
   height: 850px;
   background: url("https://img.freepik.com/free-vector/blue-abstract-acrylic-brush-stroke-textured-background_53876-86373.jpg?size=626&ext=jpg");
   background-size: cover;
-  margin: 0px; //为什么删了一个chrome extension以后突然body就自动多了一个margin？？？
+  margin: 0px;
 }
 
 p {
