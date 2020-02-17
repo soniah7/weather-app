@@ -31,9 +31,6 @@ export default class Location extends Component {
         if (response.status === 200) {
             this.setState({city: inputCity}, () => this.props.getLocation(this.state))
         }
-
-        // 这里setState不起作用
-        // this.setState({editMode: false, inputCity: ''});
     }
 
     render() {

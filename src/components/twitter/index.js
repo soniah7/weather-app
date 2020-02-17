@@ -38,14 +38,12 @@ export default class Twitter extends Component {
     }
 
     collapse = () => {
-        //
         const tweetRef1 = this.tweetRef1.current;
         const tweetRef2 = this.tweetRef2.current;
         if (tweetRef1.scrollHeight <= tweetRef1.offsetHeight + 4) this.setState({firstAngleDown: false});
         if (tweetRef2.scrollHeight <= tweetRef2.offsetHeight + 4) this.setState({secondAngleDown: false});
         if (tweetRef1.scrollHeight > 172) this.setState({firstSeeMore: true});
         if (tweetRef2.scrollHeight > 172) this.setState({secondSeeMore: true});
-        // document.querySelectorAll(".twitter__content--tweet").forEach((element, index) => { });
     }
 
 
