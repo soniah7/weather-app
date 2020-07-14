@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
+import Container from "../../hoc/Container";
 
 export default class Setting extends Component {
     render() {
         return (
-            <div className="container">
+            <Container>
                 Setting Page
-            </div>
+            </Container>
         );
     }
 }

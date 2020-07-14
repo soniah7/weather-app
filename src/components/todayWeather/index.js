@@ -18,7 +18,6 @@ export default class TodayWeather extends Component {
         if (prevProps.location !== this.props.location) {
             const location = this.props.location;
             const response = await axios.get('http://api.openweathermap.org/data/2.5/weather',{params: {q: location.city.toString(), appid: '89048c50960e64dc0c0190da242638db'}});
-
             const data = {degree: parseFloat((response.data.main.temp-273.15).toFixed(1)),
                 condition: response.data.weather[0].main,
                 humidity:response.data.main.humidity,
