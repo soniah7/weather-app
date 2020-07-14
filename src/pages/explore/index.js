@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
-import Container from "../../hoc/Container";
 
 export default class Explore extends Component {
     render() {
         return (
-            <Container>
+            <div className="container">
                 Explore Page
-            </Container>
+            </div>
         );
     }
 }

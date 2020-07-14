@@ -46,7 +46,7 @@ export default class Location extends Component {
                            value={this.state.inputCity.toUpperCase()}
                            onKeyDown={(event)=> {
                                if (event.key === 'Enter') {
-                                   return this.updateCity();
+                                   return this.updateCity(); //
                                }
                            }}
                            onBlur={this.updateCity}

@@ -4,7 +4,6 @@ import WeeklyWeather from "../../components/weeklyWeather"
 import TodayWeather from "../../components/todayWeather"
 import Location from "../../components/location"
 import './index.scss'
-import Container from "../../hoc/Container";
 
 export default class Home extends Component {
 
@@ -24,7 +23,7 @@ export default class Home extends Component {
     render() {
 
         return (
-            <Container>
+            <div className="container">
             <div className="card">
                 <div className="card__upper">
                     <div className="card__upper--todayWeather">
@@ -43,7 +42,7 @@ export default class Home extends Component {
                     </div>
                 </div>
             </div>
-            </Container>
+            </div>
         );
     }
 }

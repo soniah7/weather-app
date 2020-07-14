@@ -9,8 +9,10 @@ export default class Twitter extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            firstExpand: false,
-            secondExpand: false,
+            firstAngleDown: true,
+            secondAngleDown: true,
+            firstAngleUp: false,
+            secondAngleUp: false,
             firstSeeMore: false,
             secondSeeMore: false,
             tweetsData: [
@@ -64,7 +66,7 @@ export default class Twitter extends Component {
                                  style={{backgroundImage: `url(${this.state.tweetsData[0].icon})`}}>
                             </div>
                             <div className="twitter__content--tweet"
-                                 style={{height: this.state.firstExpand ? '160px' : '90px'}}
+                                 style={{height: this.state.firstAngleUp ? '160px' : '90px'}}
                                  ref={this.tweetRef1}>
 
                                 {this.state.tweetsData[0].content}
@@ -73,25 +75,26 @@ export default class Twitter extends Component {
                                     <a href="/#" className="see-more">..See More</a>
                                     : ''}
 
-                                {!this.state.firstExpand ?
+                                {this.state.firstAngleDown ?
                                     <FontAwesomeIcon icon={faAngleDown}
                                                      className="angle-button"
                                                      onClick={() => {
                                                          this.setState({
                                                              firstTweetOverflow: "visible",
-                                                             firstExpand: true
+                                                             firstAngleDown: false,
+                                                             firstAngleUp: true
                                                          });
                                                          // document.querySelectorAll(".twitter__content--tweet")[0].style.height = '160px';
                                                      }}/>
                                     : ''}
 
-                                {this.state.firstExpand ? <FontAwesomeIcon icon={faAngleUp}
+                                {this.state.firstAngleUp ? <FontAwesomeIcon icon={faAngleUp}
                                                                             className="angle-button"
                                                                             onClick={() => {
                                                                                 this.setState({
                                                                                     firstTweetOverflow: "hidden",
-                                                                                    // firstAngleDown: true,
-                                                                                    firstExpand: false
+                                                                                    firstAngleDown: true,
+                                                                                    firstAngleUp: false
                                                                                 });
                                                                             }}/> : ''}'
 
@@ -101,21 +104,23 @@ export default class Twitter extends Component {
                             <div className="twitter__content--icon"
                                  style={{backgroundImage: `url(${this.state.tweetsData[1].icon})`}}></div>
                             <div className="twitter__content--tweet"
-                                 style={{height: this.state.secondExpand ? '160px' : '90px'}}
+                                 style={{height: this.state.secondAngleUp ? '160px' : '90px'}}
                                  ref={this.tweetRef2}>{this.state.tweetsData[1].content}
                                 {this.state.secondSeeMore ? <a href="/#" className="see-more">..See More</a> : ''}
-                                {!this.state.secondExpand ? <FontAwesomeIcon icon={faAngleDown}
+                                {this.state.secondAngleDown ? <FontAwesomeIcon icon={faAngleDown}
                                                                                className="angle-button"
                                                                                onClick={() => {
                                                                                    this.setState({
-                                                                                       secondExpand: true
+                                                                                       secondAngleDown: false,
+                                                                                       secondAngleUp: true
                                                                                    });
                                                                                }}/> : ''}
-                                {this.state.secondExpand ? <FontAwesomeIcon icon={faAngleUp}
+                                {this.state.secondAngleUp ? <FontAwesomeIcon icon={faAngleUp}
                                                                              className="angle-button"
                                                                              onClick={() => {
                                                                                  this.setState({
-                                                                                     secondExpand: false
+                                                                                     secondAngleDown: true,
+                                                                                     secondAngleUp: false
                                                                                  });
                                                                              }}/> : ''}
                             </div>
